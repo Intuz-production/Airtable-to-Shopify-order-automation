@@ -67,28 +67,42 @@ await fetch(webhookUrl, {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({ recordId: recordId }),
-});```
+});
+```
 
-FAQ
-Is this template free to use? Yes. It's an open-source n8n workflow published by Intuz — copy the workflow JSON from this repo and import it into your own n8n instance at no cost.
+- Replace `PASTE_YOUR_N8N_PRODUCTION_URL_HERE` with the Production URL from **your** n8n Webhook node. This URL is unique to each n8n instance.
+- Add an input variable to the script named `recordId` and set its value to the **Airtable record ID** from the trigger step.
+- Test the script and turn your Airtable Automation ON.
 
-Do I need a paid n8n plan to run this? No. It runs on n8n's free self-hosted Community Edition or on n8n Cloud. You'll need your own Airtable, Shopify, and Gmail credentials, not a specific n8n pricing tier.
+## FAQ
 
-How does Airtable start the workflow? An Airtable Automation posts the record ID to the n8n webhook when an order meets your condition (e.g., “Shopify Ordered” is “Pending”). n8n then creates the Shopify order, emails the customer, and marks the Airtable record as “Done.”
+**Is this template free to use?**
+Yes. It's an open-source n8n workflow published by Intuz — copy the workflow JSON from this repo and import it into your own n8n instance at no cost.
 
-Related n8n templates from Intuz
-Automate QuickBooks invoicing & customer creation from Airtable sales orders
-Automate expense reporting from Airtable to QuickBooks
-Automate full-cycle invoicing from Airtable to QuickBooks and Stripe
-See all of Intuz's free n8n templates
+**Do I need a paid n8n plan to run this?**
+No. It runs on n8n's free self-hosted Community Edition or on n8n Cloud. You'll need your own Airtable, Shopify, and Gmail credentials, not a specific n8n pricing tier.
 
-Connect with us
+**How does Airtable start the workflow?**
+An Airtable Automation posts the record ID to the n8n webhook when an order meets your condition (e.g., “Shopify Ordered” is “Pending”). n8n then creates the Shopify order, emails the customer, and marks the Airtable record as “Done.”
+
+## Related n8n templates from Intuz
+
+- [Automate QuickBooks invoicing & customer creation from Airtable sales orders](https://github.com/Intuz-production/Airtable-to-QuickBooks-invoice-automation)
+- [Automate expense reporting from Airtable to QuickBooks](https://github.com/Intuz-production/Airtable-QuickBooks-Expense-Automation)
+- [Automate full-cycle invoicing from Airtable to QuickBooks and Stripe](https://github.com/Intuz-production/QuickBooks-Invoice-Payment-Automation)
+
+[See all of Intuz's free n8n templates](https://www.intuz.com/n8n-workflow-automation-templates/)
+
+## Connect with us
+
 Intuz is a USA-based AI & workflow automation company with 16+ years of experience building custom AI-enabled workflow automations for SMBs and Enterprises, specializing in agentic AI, LLM integrations, and CRM/ERP sync across Healthcare, FinTech, eCommerce, Manufacturing, and Real Estate.
 
-Website: https://www.intuz.com
-Email: getstarted@intuz.com
-LinkedIn: https://www.linkedin.com/company/intuz/
-Get Started: https://n8n.partnerlinks.io/intuz
-For Custom Workflow Automation
-Click here - Get Started
+* **Website:** [https://www.intuz.com](https://www.intuz.com)
+* **Email:** [getstarted@intuz.com](mailto:getstarted@intuz.com)
+* **LinkedIn:** https://www.linkedin.com/company/intuz/
+* **Get Started:** https://n8n.partnerlinks.io/intuz
+
+## For Custom Workflow Automation
+
+[Click here - Get Started](https://www.intuz.com/get-started/)
 
